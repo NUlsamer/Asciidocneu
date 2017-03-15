@@ -72,7 +72,7 @@ Formatiert sieht das dann so aus:** x^2^ ; x~2~**
 
 Nachteile
 ~~~~~~~~
-Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur(was wiederrum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und, dass, sobald etwas über Copy & Paste eingefügt wird, es sofort als Java Code interpretiert wird und somit zwei Zeilen gelöscht werden müssen.
+Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur(was wiederrum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und, dass, sobald etwas über Copy & Paste eingefügt wird, es sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen.
 
 Leider gibt es kaum deutsche Nachschlagewerke (Cheatsheets etc.).
 
