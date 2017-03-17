@@ -1,7 +1,7 @@
 Interpretation Asciidoc
 ======================
 Nico Ulsamer, Christina Frei
-v1.0
+v1.2
 :doctype: book
 :toc: right
 :toc-title: Inhaltsverzeichnis
@@ -9,10 +9,12 @@ v1.0
 [preface]
 Vorwort
 --------
-Im Zuge unseres Deutsch Unterrichts haben wir uns der Analyse der Markup Sprache _Asciidoc_ gewidmet.
-Hierzu haben wir unter anderem den direkten Vergleich mit den Funktionen, welche uns Word bietet, angestrebt.
+Im Zuge unseres Deutschunterrichts haben wir uns der Analyse der Markup Sprache _Asciidoc_ gewidmet.
+Hierzu haben wir uns der Syntax, verschiedenen Asciidoc Editoren, der Konvertierung von adoc in andere Formate und dem direkten Vergleich mit dem gängigen Programm Microsoft Office Word 2010 gewidmet.
 
-Im Folgendem möchten wir die Vor- und Nachteile von _Asciidoc_ und die möglichen Einsatzgebiete dessen erläutern. Zur Erarbeitung der Funktionen und zur Erstellung dieses Textes wurde AsciidocFX verwendet.
+Zu Beginn möchten wir einige Codebeispiele von _Asciidoc_ erläutern. 
+
+Zur Erarbeitung der Syntax von Asciidoc und zur Erstellung dieses Dokuments wurde der Editor AsciidocFX verwendet.
 
 
 Codebeispiele
@@ -45,14 +47,19 @@ Code hierfür:
 
 Vergleich zu Microsoft Office Word 2010
 --------------------------------------
-Bei der Betrachtung von Asciidoc haben wir versucht den Vergleich mit Microsoft Office Word 2010 zu ziehen.
+Heutzutage werden Texte am Computer überwiegend mit Textverarbeitungsprogrammen wie Microsoft Office Word (Im Folgenden der Einfachheit halber "Word") verfasst. Der Vorteil solcher Programme gegenüber Markup Sprachen wie Asciidoc scheint auf den ersten Blick eindeutig, nämlich die einfache und sofortige Nutzung ohne zuvor Kenntnisse über das Programm zu besitzen. Doch in Word muss der Benutzer alle Formatierung händisch selbst erledigen, während Asciidoc dies schlicht durch voreingestellte Formatierungen vereinfacht, die einem bereits einen Teil der Arbeit abnehmen. Darüber hinaus steht man als Benutzer von Word durch seine voreingestellten Funkionen und Formatierungen teilweise vor Rätseln. So werden animierte Bilder wie gifs in Word plötzlich zu Standbildern, wobei einfach das allererste Bild zur Darstellung hergenommen wird. 
 
-Der größte Unterschied zwischen Word und Asciidoc sind natürlich die Kosten. Asciidoc ist open source und darf somit kostenlos von jedem zu jeglichem Zweck verwendet werden. Dahingegen braucht man für MS Word eine Lizenz, die aktuell für einen PC im privaten Gebrauch 150 &#8364; kostet. 
+Im Folgenden der Beweis, dass Asciidoc diese Funktion bietet:
 
-Auf den ersten Blick lässt sich mit Asciidoc alles so verwirklichen, wie in Word. Natürlich braucht man, um Asciidoc nutzen zu können, eine deutlich längere Einarbeitungszeit, da man zuerst die Syntax lernen muss, während man mit Word direkt nach der Installation beginnen kann. Hierzu muss man allerdings sagen, dass es auch durchaus Spaß machen kann, wenn man sich die Syntax von Asciidoc spielerisch aneignet. 
+image:https://i.imgflip.com/1llq22.gif["Asciidoc Gif",
+link="https://i.imgflip.com/1llq22.gif"]
 
-Jedoch lassen sich mit Word beispielsweise nicht so einfach komplexe mathematische Formeln darstellen (siehe Codebeispiele).
+Bereits in der Anschaffung gibt es einen gewaltigen Unterschied. Während man, um Asciidoc nutzen zu können, nur einen geeigneten Editor herunterladen muss (was nicht mal zwingend notwendig ist, da man im Grunde jeden bereits auf dem Computer vorinstallierten Editor nutzen kann), muss man für Word zunächst eine Lizenz kaufen. Diese Lizenz kostet für die aktuelle Version für einen PC im privaten Gebrauch 150 €. Hierbei muss allerdings erwähnt werden, dass mit dieser Lizenz nicht nur Word sondern auch alle anderen Office Produkte zur Verfügung stehen.
 
+Nachdem man Word gekauft, heruntergeladen und installiert hat steht es einem direkt zur Verfügung, während man für Asciidoc eine kleine Einarbeitungszeit benötigt, die mit der Syntax zusammenhängt. Diese kann auch durchaus Spaß machen, indem man sich die Syntax spielerisch mit Hilfe von Tutorials aneignet. Zu empfehlen sind unserer Meinung nach http://asciidoctor.org/docs/asciidoc-writers-guide/ und https://powerman.name/doc/asciidoc.
+
+Während wir uns mit der Syntax beschäftigt haben ist uns unter anderem die Einfachheit der Darstellung komplexer mathematischer Formeln aufgefallen (siehe <<Codebeispiele>>). Natürlich lassen sich diese auch mit dem Formeleditor in Word erstellen, allerdings bietet dieser nur ein Grundgerüst an Zeichen, weshalb besonders im professionellen Bereich gerne Markup Sprachen zum Verfassen solcher Dokumente benutzt werden.
+Außerdem ist uns aufgefallen, dass man in Asciidoc zwischen drei verschiedenen Dokumentarten wählen kann. Diese nennen sich article (Artikelformat), manpage (Handbuchformat) und book (Buchformat - wird auch in diesem Dokument verwendet). Im Buchformat werden zum Beispiel standardmäßig nach der ersten Seite zwei leere Seiten generiert. Diese Doctypes sind dadurch so praktisch, weil sich die Formatierung je nach Format ändert und man sich daher im Voraus Gedanken darüber machen muss, welches der Formate am Besten zu dem zu erstellenden Dokument passt. Dadurch muss man sich im späteren Verlauf wiederum weniger Gedanken um die Formatierung machen, wodurch man sich letzten Endes besser auf die Formulierung des Inhalts konzentrieren kann. Zwar gibt es in Word sogenannte Formatvorlagen, die man auch selbst anpassen oder völlig neu erstellen kann, aber sie bieten einem nicht dieselbe "Intelligenz" wie Asciidoc. So muss man seine Überschriften und alle anderen Textelemente in Word trotzdem per Hand formatieren.
 
 
 Editoren
