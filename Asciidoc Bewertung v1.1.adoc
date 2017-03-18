@@ -51,20 +51,27 @@ Heutzutage werden Texte am Computer überwiegend mit Textverarbeitungsprogrammen
 
 Im Folgenden der Beweis, dass Asciidoc diese Funktion bietet:
 
-image:https://i.imgflip.com/1llq22.gif["Asciidoc Gif",
+image:https://i.imgflip.com/1llq22.gif["Asciidoc Gif", width="200px", height="120px",
 link="https://i.imgflip.com/1llq22.gif"]
 
-Bereits in der Anschaffung gibt es einen gewaltigen Unterschied. Während man, um Asciidoc nutzen zu können, nur einen geeigneten Editor herunterladen muss (was nicht mal zwingend notwendig ist, da man im Grunde jeden bereits auf dem Computer vorinstallierten Editor nutzen kann), muss man für Word zunächst eine Lizenz kaufen. Diese Lizenz kostet für die aktuelle Version für einen PC im privaten Gebrauch 150 €. Hierbei muss allerdings erwähnt werden, dass mit dieser Lizenz nicht nur Word sondern auch alle anderen Office Produkte zur Verfügung stehen.
+Bereits in der Anschaffung gibt es einen gewaltigen Unterschied. Während man, um Asciidoc nutzen zu können, nur einen geeigneten Editor herunterladen muss (was nicht mal zwingend notwendig ist, da man im Grunde jeden bereits auf dem Computer vorinstallierten Editor nutzen kann), muss man für Word zunächst eine Lizenz kaufen. Diese Lizenz kostet für die aktuelle Version, für einen PC im privaten Gebrauch 150 € und ist damit recht teuer. Hierbei muss allerdings erwähnt werden, dass mit dieser Lizenz nicht nur Word sondern auch alle anderen Office Produkte zur Verfügung stehen.
 
 Nachdem man Word gekauft, heruntergeladen und installiert hat steht es einem direkt zur Verfügung, während man für Asciidoc eine kleine Einarbeitungszeit benötigt, die mit der Syntax zusammenhängt. Diese kann auch durchaus Spaß machen, indem man sich die Syntax spielerisch mit Hilfe von Tutorials aneignet. Zu empfehlen sind unserer Meinung nach http://asciidoctor.org/docs/asciidoc-writers-guide/ und https://powerman.name/doc/asciidoc.
 
 Während wir uns mit der Syntax beschäftigt haben ist uns unter anderem die Einfachheit der Darstellung komplexer mathematischer Formeln aufgefallen (siehe <<Codebeispiele>>). Natürlich lassen sich diese auch mit dem Formeleditor in Word erstellen, allerdings bietet dieser nur ein Grundgerüst an Zeichen, weshalb besonders im professionellen Bereich gerne Markup Sprachen zum Verfassen solcher Dokumente benutzt werden.
-Außerdem ist uns aufgefallen, dass man in Asciidoc zwischen drei verschiedenen Dokumentarten wählen kann. Diese nennen sich article (Artikelformat), manpage (Handbuchformat) und book (Buchformat - wird auch in diesem Dokument verwendet). Im Buchformat werden zum Beispiel standardmäßig nach der ersten Seite zwei leere Seiten generiert. Diese Doctypes sind dadurch so praktisch, weil sich die Formatierung je nach Format ändert und man sich daher im Voraus Gedanken darüber machen muss, welches der Formate am Besten zu dem zu erstellenden Dokument passt. Dadurch muss man sich im späteren Verlauf wiederum weniger Gedanken um die Formatierung machen, wodurch man sich letzten Endes besser auf die Formulierung des Inhalts konzentrieren kann. Zwar gibt es in Word sogenannte Formatvorlagen, die man auch selbst anpassen oder völlig neu erstellen kann, aber sie bieten einem nicht dieselbe "Intelligenz" wie Asciidoc. So muss man seine Überschriften und alle anderen Textelemente in Word trotzdem per Hand formatieren.
+Außerdem ist uns aufgefallen, dass man in Asciidoc zwischen drei verschiedenen Dokumentarten wählen kann. Diese nennen sich "article" - Artikelformat, "manpage" - Handbuchformat und "book" - Buchformat (wird auch in diesem Dokument verwendet). Im Buchformat werden zum Beispiel standardmäßig nach der ersten Seite zwei leere Seiten generiert. Diese doctypes sind praktisch, denn je nachdem welches Format man wählt ändert sich die Formatierung und man sich daher im Voraus Gedanken darüber machen muss, welches der Formate am Besten zu dem zu erstellenden Dokument passt. Dadurch muss man sich im späteren Verlauf wiederum weniger Gedanken um die Formatierung machen, wodurch man sich letzten Endes besser auf die Formulierung des Inhalts konzentrieren kann. Zwar gibt es in Word sogenannte Formatvorlagen, die man auch selbst anpassen oder völlig neu erstellen kann, aber sie bieten einem nicht dieselbe "Intelligenz" wie Asciidoc. So muss man seine Überschriften und alle anderen Textelemente in Word trotzdem per Hand formatieren. 
 
 
 Editoren
--------
+--------
+
 * AsciidocFX
+
+Dieser Editor ist für alle Plattformen, ob Windows, Linux oder Mac verfügbar. Man kann ihn einfach http://asciidocfx.com/[hier] herunterladen und ohne Umschweife loslegen. Der Editor besitzt zwar kleine Mängel, so kann man beispielsweise kein €-Zeichen eintippen, sondern muss es über Copy & Paste einfügen, aber er ist vor allem für Anfänger brauchbar. So finden sich am oberen Rand altbekannte Steuerelemente von Word. Das erleichtert die Einführung in die Syntax von Asciidoc, da man zu Beginn einfach spielerisch ausprobieren kann. Klickt man auf den Button für __Bold__ fügt einem der Editor zweimal zwei Sternchen ein, was in der Asciidoc Syntax die Formatierung zum Schreiben von fett gedruckten Wörtern ist - damit wird die Syntax teilweise selbsterklärend. Etwas vorsichtig muss man jedoch bei den Formaten sein, denn beim Speichern als PDF-Datei kann es durch die Konvertierung in Zwischenformate zu teils fehlerhafter Formatierungen kommen. 
+
+Ein zu erwähnendes hilfreiches Feature ist noch, dass man durch einen Klick auf __Browser__ direkt in die Dokumentansicht im Browser gelangt, sprich das Dokument wird in HTML konvertiert und im Browser geöffnet. Das erleichtert vor allem der Erstellen von Dokumenten, die für das Internet vorgesehen sind.
+
+Dank dieser Spielereien, dem built-in Syntax Highlightning & der LivePreview sowie den vielen möglichen Ausgabeformaten (HTML, PDF, Ebook und DocBook) ist dieser Editor für den Anfänger ideal. 
 
 * Atom 
 
@@ -72,9 +79,35 @@ Editoren
 
 Selbstverständlich kann man auch mit jedem auf Computern vorinstallierten Editor Asciidoc Dateien erstellen.
 
-Konvertierung in andere Formate
--------------------------------
-Um Asciidoc in mehr Arbeitsbereichen verwenden zu können ist es manchmal nötig, dass man die in Asciidoc erstellten Dokumente auch in andere Formate umwandeln kann. Hier wäre vor allem das beliebte pdf-Format zu nennen. Dieses ist beispielsweise praktisch, um seine Arbeit zu verbreiten, ohne dass die Leser sich extra einen Editor herunterladen oder den Text in einen Live Preview Asciidoc Webeditor kopieren müssen.
+Konvertierung von .adoc in andere Formate
+-----------------------------------------
+Um Asciidoc in mehr Arbeitsbereichen verwenden zu können ist es durchaus nötig, dass man die mit Asciidoc erstellten Dokumente auch in andere Formate umwandeln kann. Vor allem das beliebte PDF-Format ist wichtig. Dieses ist beispielsweise praktisch, um seine Arbeit zu verbreiten, ohne dass die Leser sich extra einen Editor mit LivePreview herunterladen oder den Text in einen Webeditor kopieren müssen.
+
+* PDF-Format
+
+Es gibt mehrere Möglichkeiten eine .adoc Datei in ein .pdf Format umzuwandeln. Die meiste Software verwendet hier jedoch Zwischenformate wie das DocBook, um letztlich eine PDF daraus zu erstellen. Mit dem eigens für Asciidoc programmierten https://github.com/asciidoctor/asciidoctor-pdf[AsciidoctorPDF] lassen sich .adoc Dateien unmittelbar in PDF's konvertieren. Für die Nutzung von AsciidoctorPDF muss man sich Ruby herunterladen und dessen Pfad den Umgebungsvariablen hinzufügen. Die aktuelle Version für Ruby findet man http://rubyinstaller.org/downloads/[hier]. Man braucht den RubyInstaller und das passende DevKit, wie auch auf der Seite erklärt ist. Nachdem Ruby installiert ist kann man der Anleitung von AsciidoctorPDF folgen, beginnend bei den Prerequisites. Im Folgenden ist interessant zu wissen, dass 'gems' sozusagen libraries für Ruby sind. Als nächstes folgt also dieser Befehl auf der Kommandozeile, um das gem __prawn__ zu installieren: 
+[source, cmd]
+-----
+gem install prawn --version 2.1.0   
+-----
+Nun benötigt man nur noch das gem __asciidoctor-pdf__:
+[source, cmd]
+-----
+gem install asciidoctor-pdf --pre
+-----
+Schon kann man über diesen Befehl
+[source, cmd]
+-----
+asciidoctor-pdf path\to\adocfile.adoc
+-----
+
+'...' eine .adoc Datei schnell und ohne Umwege in eine PDF konvertieren.
+
+* HTML-Format
+
+Der Vorteil von HTML-Dateien ist die erleichterte Einbindung der .adoc Dateien in Webseiten. Zudem kann man das Dokument einfach in jedem beliebigen Browser öffnen und einsehen. Die Konvertierung in eine .html Datei geht am leichtesten. Sogar der Webeditor  https://asciidoclive.com/edit/scratch/1[asciidocLIVE] besitzt die Funktion "__Exportieren als.. </>HTML__". Man braucht also nur den Webeditor zu öffnen, seinen Asciidoc Text einfügen und schließlich die eben genannte Funktion nutzen. Nachteile habe ich hierbei keine festgestellt. 
+
+Wer als Editor AsciidocFX nutzt findet dort ebenfalls einen Button zum "__Speichern als HTML Datei__". Dieser unterstützt zudem die Konvertierung ins PDF Format, hiervon raten wir allerdings ab, denn durch das vorherige umwandeln in ein Zwischenformat, gerät die Formatierung unter Umständen in Mitleidenschaft.
 
 Anwendungsbeispiele im Betrieb
 -----------------------------
