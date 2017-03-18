@@ -27,7 +27,23 @@ Ein einfaches Gleichheitszeichen bewirkt, dass der darauffolgende Text als Haupt
 
 Vergleichbar ist diese Funktion mit den Überschriften in HTML, denn <h1></h1> (HTML) verhält sich wie ein '=' (Asciidoc), sowie <h2></h2> zwei Gleichheitszeichen '==' entsprechen würde.
 
-Eine weitere Möglichkeit, Überschriften zu setzen, ist das setzen von Gleichheitszeichen unter das geschriebene, welches als Überschrift hervorgehoben werden soll. Die Anzahl der hier benötigten Gleichheitszeichen ist Abhängig von der Lände, des als Überschrift zu markierenden Wortes.
+Eine weitere Möglichkeit, Überschriften zu setzen, ist das setzen von Minuszeichen unter das geschriebene, welches als Überschrift hervorgehoben werden soll. Die Anzahl der hier benötigten Minuszeichen ist Abhängig von der Länge, des als Überschrift zu markierenden Wortes.
+Um unter den verschiedenen Überschriften Unterüberschriften zu setzen, muss man für die erste Unterüberschrift mehrere Tilde setzen, für die zweite Unterüberschrift mehrere Zirkumflexe, für die dritte Unterüberschrift mehrere Pluszeichen. Dies ist auch die maximale Mögliche Anzahl von Unterüberschriften, welche in der Standartkonfiguration von Asciidoc verwendet werden kann.
+
+Syntax:
+
+[source, asciidoc]
+----
+Erste Überschrift
+---------------
+Unterüberschrift 1
+~~~~~~~~~~~~~~~
+Unterüberschrift 2
+^^^^^^^^^^^^^^^^
+Unterüberschrift 3
+++++++++++++++++
+----
+
 
 * Aufzählungen
 
@@ -44,6 +60,38 @@ Code hierfür:
 . Zweiter Aufzählungspunkt 
 ----
 
+*Doctype
+
+In Asciidoc besteht die Möglichkeit, durch das setzen eines sogenannten "Doctypes", ein bereits voreingestelltes Format für das Dokument zu wählen. 
+Hier besteht die Möglichkeit, das vordefinierte Format "book", "article", oder "manpage" zu verwenden. Im book-format sind, wie bei einem Buch üblich, die Seitenzahlen jeweils auf der rechten, und daraufhin auf der linken Seite, es besteht ebenfalls die Möglichkeit ein Vorwort, ein Nachwort, ein Glossar und Fußnoten hinzuzufügen. 
+Bei dem Doctype article handelt es sich um ein Format, welches für kurze Artikel oder Dokumentationen verwendet werden kann.
+Der Doctype manpage wird verwendet um UNIX Handbücher zu schreiben.
+
+Die Syntax, um den doctype zu setzen ist folgender:
+[source, asciidoc]
+----
+:doctype: book
+:doctype: article
+:doctype: manpage
+----
+
+Jede der verschiedenen Dotypes hat seine Vor- und Nachteile, wir verwendeten vor allem aus dem optischem Aspekt den Doctype book, da dieser von der Formatierung am ansprechendsten aussah.
+
+*Table of Content
+
+Eine weitere interessante und vorallem wichtige Funktion von Asciidoc ist das einbinden eines Table of Contents (zu deutsch: Inhaltsverzeichnis). Dieser erkennt, sobald gesetzt, die einzelnen Überschriften und ermögicht durch Verlinkungen, in dem fertigen Dokument (in PDF, Docbook etc. formatiert) zu den entsprechenden Kapiteln zu springen, außerdem gibt er dem Leser einen Einblick in die verschiedenen Kapitel. Unterüberschriften werden im Table of Content leicht eingerückt dargestellt. Der Table of Content kann entweder links oder rechts von dem Dokument platziert werden. 
+Die Syntax, um das Inhaltsverzeichnis mit Benutzerdefiniertem Namen, und die Ausrichtung dessen zu setzen, ist folgende:
+[source, asciidoc]
+----
+:toc:
+:toc: right
+:toc-title: Name des Table of Content
+----
+
+*
+
+
+
 
 Vergleich zu Microsoft Office Word 2010
 --------------------------------------
@@ -56,7 +104,7 @@ link="https://i.imgflip.com/1llq22.gif"]
 
 Bereits in der Anschaffung gibt es einen gewaltigen Unterschied. Während man, um Asciidoc nutzen zu können, nur einen geeigneten Editor herunterladen muss (was nicht mal zwingend notwendig ist, da man im Grunde jeden bereits auf dem Computer vorinstallierten Editor nutzen kann), muss man für Word zunächst eine Lizenz kaufen. Diese Lizenz kostet für die aktuelle Version, für einen PC im privaten Gebrauch 150 € und ist damit recht teuer. Hierbei muss allerdings erwähnt werden, dass mit dieser Lizenz nicht nur Word sondern auch alle anderen Office Produkte zur Verfügung stehen.
 
-Nachdem man Word gekauft, heruntergeladen und installiert hat steht es einem direkt zur Verfügung. Für Asciidoc benötigt man noch eine kleine Einarbeitungszeit, die mit der Syntax zusammenhängt. Diese Zeit kann durchaus Spaß machen, indem man sich die Syntax spielerisch mit Hilfe von Tutorials aneignet. Zu empfehlen sind unserer Meinung nach http://asciidoctor.org/docs/asciidoc-writers-guide/ und https://powerman.name/doc/asciidoc.
+Nachdem man Word gekauft, heruntergeladen und installiert hat steht es einem direkt zur Verfügung. Für Asciidoc benötigt man noch eine kleine Einarbeitungszeit, die mit der Syntax zusammenhängt. Diese Zeit kann durchaus Spaß machen, indem man sich die Syntax spielerisch mit Hilfe von Tutorials aneignet. Zu empfehlen sind unserer Meinung nach folgende Cheatsheets/Tutorials: http://asciidoctor.org/docs/asciidoc-writers-guide/ und https://powerman.name/doc/asciidoc.
 
 Während wir uns mit der Syntax beschäftigt haben ist uns unter anderem die Einfachheit der Darstellung komplexer mathematischer Formeln aufgefallen (siehe https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele]). Natürlich lassen sich diese auch mit dem Formeleditor in Word erstellen, allerdings bietet dieser nur ein Grundgerüst an Zeichen, weshalb besonders im professionellen Bereich gerne Markup Sprachen zum Verfassen solcher Dokumente benutzt werden.
 Außerdem ist uns aufgefallen, dass man in Asciidoc zwischen drei verschiedenen Dokumentarten wählen kann. Diese nennen sich "article" - Artikelformat, "manpage" - Handbuchformat und "book" - Buchformat (wird auch in diesem Dokument verwendet). Zum Beispiel werden die Seiten im Buchformat standardmäßig abwechselnd unten links und unten rechts durchnummeriert, sodass man hinterher ein Buch daraus binden könnte. Diese doctypes sind praktisch, denn je nachdem welches Format man wählt ändert sich die Formatierung, weshalb man sich im Voraus Gedanken darüber machen muss, welches der Formate am Besten zu dem zu erstellenden Dokument passt. Dadurch muss man sich im späteren Verlauf wiederum weniger Gedanken um die Formatierung machen, wodurch man sich letzten Endes besser auf die Formulierung des Inhalts konzentrieren kann. Zwar gibt es in Word eine ähnliche Funktion, nämlich sogenannte Formatvorlagen, die man auch selbst anpassen oder völlig neu erstellen kann, aber sie bieten einem nicht dieselbe "Intelligenz" wie Asciidoc. So muss man seine Überschriften und alle anderen Textelemente in Word trotzdem mühsam per Hand formatieren. 
@@ -145,10 +193,10 @@ Nur indem man das Unerreichbare anstrebt, gelingt das Erreichbare. Nur mit dem U
 ____
 
 Die Vorteile Asciidocs liegen in vielen Bereichen. 
-So kann man nicht nur durch einfaches Einfügen von Programmcode und die Angabe der verwendeten Programmiersprache die zugehörige Formatierung ändern, sondern ebenfalls Zitate, Bilder und Tabellen mit Leichtigkeit einfügen.
+So kann man, wie in https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele] gezeigt, nicht nur durch einfaches Einfügen von Programmcode und die Angabe der verwendeten Programmiersprache das zugehörige Syntax-Highlighting verwenden(was besonders für die Dokumentation von Programmen hilfreich ist), sondern ebenfalls Zitate, Bilder und Tabellen mit Leichtigkeit einfügen.
 Dank der Livepreview einiger Programme kann man die verwendeten Bausteine sofort betrachten und gegebenenfalls abändern.
 
-Ein Weiterer, definitiv zu nennender Vorteil von Asciidoc ist die beinahe schon kinderleicht zu handhabende Formatierung, so muss man lediglich einige Codes und Kommandos beherrschen, die es ermöglichen den Text nach den Wünschen des Autors zu formatieren.
+Ein Weiterer, definitiv zu nennender Vorteil von Asciidoc ist die beinahe schon kinderleicht zu handhabende Formatierung, so muss man lediglich einige Codes und Kommandos beherrschen (wie in https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele] gezeigt), die es ermöglichen den Text nach den Wünschen des Autors zu formatieren.
 
 Asciidoc bietet, zumindest bei der Benutzung von AsciidocFX die Möglichkeit, Dokumente als Ebook, Docbook, HTML oder PDF auszugeben.
 
@@ -161,15 +209,15 @@ Formatiert sieht das dann so aus:** x^2^ ; x~2~**
 
 Nachteile
 ~~~~~~~~
-Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur(was wiederrum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und, dass, sobald etwas über Copy & Paste eingefügt wird, es sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen. €
+Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur(was wiederrum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und, dass, sobald etwas über Copy & Paste eingefügt wird, es sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen.
 
 Leider gibt es kaum deutsche Nachschlagewerke (Cheatsheets etc.).
 
-Keine mögliche Konfiguration vorgefertigter Zeichensätze (Länge von Pfeilen, Lage von Pfeilen etc.)
+Es besteht in Asciidoc leider keine mögliche Konfiguration vorgefertigter Zeichensätze (Länge von Pfeilen, Lage von Pfeilen etc.)
 
-Zu den Nachteilen zählt außerdem die Tatsache, dass man durch versehentliche Returns oder Sonderzeichen die gesamte Formatierung verändern kann, wodurch das Dokument ungewollt anders aussieht. 
+Zu den Nachteilen zählt außerdem die Tatsache, dass man durch versehentliche Returns oder Sonderzeichen die gesamte Formatierung verändern kann, wodurch das Dokument ungewollt anders aussieht.
 
-Ein weiterer Nachteil ist die Tatsache, dass man bei der Verwendung der Durchnummerierung (welche durch das setzen von Punkten realisiert wird) direkt danach einen weiteren Punkt setzen muss, damit die Liste logisch forgeführt wird. Andernfalls (falls zwischen Punkt 1 und Punkt 2 ein Absatz ist) wird die Aufzählung von neuem gestartet.
+Ein weiterer Nachteil ist die Tatsache, dass man bei der Verwendung der Durchnummerierung (welche durch das setzen von Punkten realisiert wird) direkt danach einen weiteren Punkt setzen muss, damit die Liste logisch forgeführt wird. Andernfalls (falls zwischen Punkt 1 und Punkt 2 ein Absatz ist) wird die Aufzählung von neuem (also wieder mit der 1 beginnend) gestartet.
 
 Fazit
 ----
