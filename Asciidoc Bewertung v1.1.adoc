@@ -1,5 +1,6 @@
 Interpretation Asciidoc
 ======================
+-v1.0
 Nico Ulsamer, Christina Frei
 
 :doctype: book
