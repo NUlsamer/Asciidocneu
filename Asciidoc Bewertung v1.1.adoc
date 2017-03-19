@@ -106,10 +106,43 @@ Bereits in der Anschaffung gibt es einen gewaltigen Unterschied. Während man, u
 
 Nachdem man Word gekauft, heruntergeladen und installiert hat steht es einem direkt zur Verfügung. Für Asciidoc benötigt man noch eine kleine Einarbeitungszeit, die mit der Syntax zusammenhängt. Diese Zeit kann durchaus Spaß machen, indem man sich die Syntax spielerisch mit Hilfe von Tutorials aneignet. Zu empfehlen sind unserer Meinung nach folgende Cheatsheets/Tutorials: http://asciidoctor.org/docs/asciidoc-writers-guide/ und https://powerman.name/doc/asciidoc.
 
-Während wir uns mit der Syntax beschäftigt haben ist uns unter anderem die Einfachheit der Darstellung komplexer mathematischer Formeln aufgefallen (siehe https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele]). Natürlich lassen sich diese auch mit dem Formeleditor in Word erstellen, allerdings bietet dieser nur ein Grundgerüst an Zeichen, weshalb besonders im professionellen Bereich gerne Markup Sprachen zum Verfassen solcher Dokumente benutzt werden.
+Während wir uns mit der Syntax beschäftigt haben ist uns unter anderem die Einfachheit der Darstellung komplexer mathematischer Formeln aufgefallen (siehe <<Codebeispiele>>). Natürlich lassen sich diese auch mit dem Formeleditor in Word erstellen, allerdings bietet dieser nur ein Grundgerüst an Zeichen, weshalb besonders im professionellen Bereich gerne Markup Sprachen zum Verfassen solcher Dokumente benutzt werden.
 Außerdem ist uns aufgefallen, dass man in Asciidoc zwischen drei verschiedenen Dokumentarten wählen kann. Diese nennen sich "article" - Artikelformat, "manpage" - Handbuchformat und "book" - Buchformat (wird auch in diesem Dokument verwendet). Zum Beispiel werden die Seiten im Buchformat standardmäßig abwechselnd unten links und unten rechts durchnummeriert, sodass man hinterher ein Buch daraus binden könnte. Diese doctypes sind praktisch, denn je nachdem welches Format man wählt ändert sich die Formatierung, weshalb man sich im Voraus Gedanken darüber machen muss, welches der Formate am Besten zu dem zu erstellenden Dokument passt. Dadurch muss man sich im späteren Verlauf wiederum weniger Gedanken um die Formatierung machen, wodurch man sich letzten Endes besser auf die Formulierung des Inhalts konzentrieren kann. Zwar gibt es in Word eine ähnliche Funktion, nämlich sogenannte Formatvorlagen, die man auch selbst anpassen oder völlig neu erstellen kann, aber sie bieten einem nicht dieselbe "Intelligenz" wie Asciidoc. So muss man seine Überschriften und alle anderen Textelemente in Word trotzdem mühsam per Hand formatieren. 
+Asciidoc bietet, wenn auch nur indirekt, sogar den Verfassern musikalischer Notationen Vorteile. Es ist mit dem in den Asciidoc Filtern enthaltenen Python Script __music2png.py__ möglich, diesen Schriftblock
 
-Dafür, dass Word ein kostenpflichtiges, professionell programmiertes und vielgenutztes Programm ist, steht Asciidoc dem in Nichts nach.
+
+[source, music]
+-----
+["music","music1.png",scaledwidth="100%"]
+---------------------------------------------------------------------
+T:The Butterfly
+R:slip jig
+C:Tommy Potts
+H:Fiddle player Tommy Potts made this tune from two older slip jigs,
+H:one of which is called "Skin the Peelers" in Roche's collection.
+H:This version by Peter Cooper.
+D:Bothy Band: 1975.
+M:9/8
+K:Em
+vB2(E G2)(E F3)|B2(E G2)(E F)ED|vB2(E G2)(E F3)|(B2d) d2(uB A)FD:|
+|:(vB2c) (e2f) g3|(uB2d) (g2e) (dBA)|(B2c) (e2f) g2(ua|b2a) (g2e) (dBA):|
+|:~B3 (B2A) G2A|~B3 BA(uB d)BA|~B3 (B2A) G2(A|B2d) (g2e) (dBA):|
+---------------------------------------------------------------------
+-----
+
+'...' in einen anschaulichen Notenblock in Form eines png-Bildes zu verwandeln:
+
+image:http://www.methods.co.nz/asciidoc/music1.png["Musical Notation", link="http://www.methods.co.nz/asciidoc/music1.png"]
+
+Diese Umwandlung wird durch den vorangestellten Filter "music" erreicht. Man hat zudem noch die optionalen Möglichkeiten einen Dateinamen für das Ausgabe-png festzulegen "music1.png" sowie die Größe durch "scaledwidth" zu bestimmen. Dieses Beispiel stammt aus der Asciidoc Dokumentation. In Word haben wir kein vergleichbares Mittel gefunden, um Notenblätter zu erstellen. Der einzige Weg wäre eine Unicode Schriftart (z.B. "Fughetta") mit entsprechendem Zeichensatz herunterzuladen, um damit zumindest Noten schreiben zu können. Das Endergebnis, das mit Hilfe von Asciidoc erreicht wird, wird das von Word jedoch höchstwahrscheinlich übertreffen. 
+
+In allen sonstigen Bereichen, wie zum Beispiel im Erstellen von Tabellen, bei der Formatierung von Schrift, beim Einfügen von Fußnoten, Bildern oder Diagrammen finden sich kaum nennbare Unterschiede zwischen den beiden Textverarbeitungsformen. 
+
+Trotz allem rentiert es sich ein herkömmliches Schreibprogramm auf dem Computer zu haben, da es in Asciidoc kein Brief-Format gibt, mit welchem man einfach und schnell einen Brief schreiben kann. Hier würde man sich durch die Einrückungen mit Asciidoc nur unnötige Umstände machen, da man zusätzlich Stylesheets einbinden müsste.
+
+Alles in allem kann man sagen:
+
+Dafür, dass Word ein kostenpflichtiges, professionell programmiertes und vielgenutztes Programm ist, steht Asciidoc dem in Nichts nach und bietet zudem noch einige Extras, die Word nicht besitzt. Für den Alltag sind beide Formen der Textverarbeitung nützlich, es kommt grundsätzlich auf die Dokumentenart an, die man erstellen will. So eignet sich Asciidoc mehr für Dokumentationen, Anleitungen, Bücher, Zeitschriftenartikel, Blogeeinträge und ähnliche Formate, während Word für Briefe und kurzfristig zu erstellende Textarbeiten geeignet ist.
 
 
 Editoren
@@ -122,7 +155,7 @@ Dieser Editor ist für alle Plattformen, ob Windows, Linux oder Mac verfügbar. 
 
 Ein zu erwähnendes hilfreiches Feature ist noch, dass man durch einen Klick auf __Browser__ direkt in die Dokumentansicht im Browser gelangt, sprich das Dokument wird in HTML konvertiert und im Browser geöffnet. Das erleichtert vor allem der Erstellen von Dokumenten, die für das Internet vorgesehen sind.
 
-Dank dieser Spielereien, dem built-in Syntax Highlightning & der LivePreview sowie den vielen möglichen Ausgabeformaten (HTML, PDF, Ebook und DocBook) ist dieser Editor für den Anfänger ideal. 
+Dank dieser Spielereien, dem built-in Syntax Highlighting & der LivePreview sowie den vielen möglichen Ausgabeformaten (HTML, PDF, Ebook und DocBook) ist dieser Editor für den Anfänger ideal. 
 
 * *Atom* 
 
@@ -132,11 +165,11 @@ Der Editor https://atom.io/[Atom] ist ebenfalls für alle Pattformen verfügbar.
 -----
 apm install asciidoc-preview
 -----
-Dadurch wird beim erneuten Start von Atom in der Menüleiste unter Packages der Punkt Asciidoc Preview verfügbar. Öffnet man also eine adoc Datei und klickt unter dem eben beschriebenen Menüpunkt auf Toggle Preview (oder nutzt die Tastenkombination Ctrl+Shift+A) öffnet sich ein zweites Fenster mit der Live Preview. Man hat auch die Möglichkeit noch mehr Packages zu installieren, so gibt es unter anderem auch eines für das Syntax-Highlightning und für die Autovervollständigung von Formatierungsbefehlen. Atom würde ich eher fortgeschritteneren Benutzen empfehlen, da man nicht direkt - wie bei AsciidocFX -  loslegen kann und es keine Steuerelemente zum Formatieren gibt. 
+Dadurch wird beim erneuten Start von Atom in der Menüleiste unter Packages der Punkt Asciidoc Preview verfügbar. Öffnet man also eine adoc Datei und klickt unter dem eben beschriebenen Menüpunkt auf Toggle Preview (oder nutzt die Tastenkombination Ctrl+Shift+A) öffnet sich ein zweites Fenster mit der Live Preview. Man hat auch die Möglichkeit noch mehr Packages zu installieren, so gibt es unter anderem auch eines für das Syntax-Highlighting und für die Autovervollständigung von Formatierungsbefehlen. Atom würde ich eher fortgeschritteneren Benutzen empfehlen, da man nicht direkt - wie bei AsciidocFX -  loslegen kann und es keine Steuerelemente zum Formatieren gibt. 
 
 * *AsciidocLIVE*
 
-Es gibt auch Webeditoren, wie https://asciidoclive.com/edit/scratch/1[AsciidocLIVE], die den Vorteil haben, dass man keine Software auf dem Computer installieren muss und trotzdem eine Live Preview bekommt. Syntax Highlightning wird ebenfalls unterstützt. Auch kann man sein Dokument direkt in Dropbox, GoogleDrive oder lokal auf dem Computer speichern. Zudem wird einem die Möglichkeit geboten, das Geschriebene ins HTML-Format zu konvertieren. Für den schnellen Einsatz ist der AsciidocLIVE Webeditor also durchaus praktikabel.
+Es gibt auch Webeditoren, wie https://asciidoclive.com/edit/scratch/1[AsciidocLIVE], die den Vorteil haben, dass man keine Software auf dem Computer installieren muss und trotzdem eine Live Preview bekommt. Syntax Highlighting wird ebenfalls unterstützt. Auch kann man sein Dokument direkt in Dropbox, GoogleDrive oder lokal auf dem Computer speichern. Zudem wird einem die Möglichkeit geboten, das Geschriebene ins HTML-Format zu konvertieren. Für den schnellen Einsatz ist der AsciidocLIVE Webeditor also durchaus praktikabel.
 
 Selbstverständlich kann man auch mit jedem auf Computern vorinstallierten Editor .adoc Dateien erstellen, wobei man jedoch auf die Kodierung des Zeichensatzes Acht geben muss. Mit Notepad++ und der UTF-8 Kodierung haben wir beispielsweise ein zufriedenstellendes Ergebnis erreicht.
 
@@ -173,7 +206,7 @@ Wer als Editor AsciidocFX nutzt findet dort ebenfalls einen Button zum "__Speich
 
 Anwendungsbeispiele im Betrieb
 -----------------------------
-Nachdem wir im Abschnitt https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#vergleich-zu-microsoft-office-word-2010[Vergleich zu Microsoft Office Word 2010] bereits erläutert haben, dass Asciidoc grundsätzlich keine Nachteile gegenüber Word hat, stellt sich die Frage, warum in Unternehmen trotzdem lieber das kostenpflichtige Microsoft Office Programm verwendet wird. Im Grunde genommen könnte ein Unternehmen ohne die teuren Office-Lizenzen enorm Kosten sparen. 
+Nachdem wir im Abschnitt <<Vergleich zu Microsoft Office Word 2010>> bereits erläutert haben, dass Asciidoc grundsätzlich keine Nachteile gegenüber Word hat, stellt sich die Frage, warum in Unternehmen trotzdem lieber das kostenpflichtige Microsoft Office Programm verwendet wird. Im Grunde genommen könnte ein Unternehmen ohne die teuren Office-Lizenzen enorm Kosten sparen. 
 
 Der Grund ist vermutlich, dass der Aufwand, jedem Mitarbeiter eine Schulung in Asciidoc zu ermöglichen und schließlich sicherzustellen, dass auch jeder Mitarbeiter nach der Schulung mit Hilfe von Asciidoc Dokumente verfassen kann, viel zu groß wäre. Eine solch immense Umstellung würde bei einigen Mitarbeitern sicher zu Verständnisproblemen führen, die sich erst mit einsetzender Gewohnheit lösen würden. Insbesondere ältere Mitarbeiter, die ihr Leben lang mit Textverarbeitungsprogrammen wie Word gearbeitet haben und für Mitarbeiter ohne Programmierkenntnisse oder Affinität zu diesem Bereich wären von diesen Problemen betroffen, denn die Syntax von Asciidoc ist auf den ersten Blick gewöhnungsbedürftig und ähnelt der von Programmiersprachen. Ein vollständiges Ersetzen von Word durch Asciidoc macht daher in unseren Augen, trotz der Kostenersparnis, keinen Sinn. 
 
@@ -217,7 +250,7 @@ Es besteht in Asciidoc leider keine mögliche Konfiguration vorgefertigter Zeich
 
 Zu den Nachteilen zählt außerdem die Tatsache, dass man durch versehentliche Returns oder Sonderzeichen die gesamte Formatierung verändern kann, wodurch das Dokument ungewollt anders aussieht.
 
-Ein weiterer Nachteil ist die Tatsache, dass man bei der Verwendung der Durchnummerierung (welche durch das setzen von Punkten realisiert wird) direkt danach einen weiteren Punkt setzen muss, damit die Liste logisch forgeführt wird. Andernfalls (falls zwischen Punkt 1 und Punkt 2 ein Absatz ist) wird die Aufzählung von neuem (also wieder mit der 1 beginnend) gestartet.
+Ein weiterer Nachteil ist die Tatsache, dass man bei der Verwendung der Durchnummerierung (welche durch das Setzen von Punkten realisiert wird) direkt danach einen weiteren Punkt setzen muss, damit die Liste logisch fortgeführt wird. Andernfalls (falls zwischen Punkt 1 und Punkt 2 ein Absatz ist) wird die Aufzählung von neuem (also wieder mit der 1 beginnend) gestartet.
 
 Fazit
 ----
