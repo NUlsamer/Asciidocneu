@@ -279,7 +279,7 @@ ____
 
 
 Die Vorteile Asciidocs liegen in vielen Bereichen. 
-So kann man, wie in https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele] gezeigt, nicht nur durch einfaches Einfügen von Programmcode und die Angabe der verwendeten Programmiersprache das zugehörige Syntax-Highlighting verwenden (was besonders für die Dokumentation von Programmierarbeiten hilfreich ist), sondern ebenfalls Zitate, Bilder und Tabellen mit Leichtigkeit einfügen.
+So kann man, wie in <<Codebeispiele>> gezeigt, nicht nur durch einfaches Einfügen von Programmcode und die Angabe der verwendeten Programmiersprache das zugehörige Syntax-Highlighting verwenden (was besonders für die Dokumentation von Programmierarbeiten hilfreich ist), sondern ebenfalls Zitate, Bilder und Tabellen mit Leichtigkeit einfügen.
 Dank der Live Preview einiger Programme kann man die verwendeten Bausteine sofort Betrachten und gegebenenfalls abändern.
 
 Ein Weiterer, definitiv zu nennender Vorteil von Asciidoc ist die beinahe schon kinderleicht zu handhabende Formatierung, so muss man lediglich einige Codes und Kommandos beherrschen (wie in <<Codebeispiele>> gezeigt), die es ermöglichen, den Text nach den Wünschen des Autors zu formatieren.
