@@ -94,6 +94,8 @@ In Asciidoc hat man (was vor allem zur Dokumentation von Programmen von nutzen i
 
 So sieht folgender Code..
 
+[source, asciidoc]
+----
 public class HelloWorld 
 {
  
@@ -102,7 +104,7 @@ public class HelloWorld
              System.out.println("Hello World!");
              int beispielwert = 3;
        }
-
+----
 '...' mit Syntax-Highlighting so aus:
 
 [source, java]
