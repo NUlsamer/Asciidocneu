@@ -10,7 +10,7 @@ v1.2
 Vorwort
 --------
 Im Zuge unseres Deutschunterrichts haben wir uns der Analyse der Markup Sprache _Asciidoc_ gewidmet.
-Hierzu haben wir uns mit der Syntax, verschiedenen Asciidoc Editoren, der Konvertierung von adoc in andere Formate beschäftigt und einen direkten Vergleich zu dem gängigen Programm Microsoft Office Word 2010 gezogen.
+Hierzu haben wir uns mit der Syntax, verschiedenen Asciidoc Editoren und der Konvertierung von adoc in andere Formate beschäftigt und einen direkten Vergleich zu dem gängigen Programm Microsoft Office Word 2010 gezogen.
 
 Zu Beginn möchten wir an __Asciidoc__ heranführen, indem wir einige Codebeispiele erläutern. 
 
@@ -295,16 +295,13 @@ Formatiert sieht das dann so aus:** x^2^ ; x~2~**
 
 Nachteile
 ~~~~~~~~
-Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur (was wiederum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und dass, sobald etwas über Copy & Paste eingefügt wird (auch abhängig vom verwendeten Editor), es sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen.
-
-Leider gibt es kaum deutsche Nachschlagewerke (Cheatsheets etc.).
-
+Im folgenden setzen wir uns mit den Nachteilen Asciidocs auseinander.
+Zwei zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur (was wiederum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und ,dass, sobald etwas über Copy & Paste eingefügt wird (auch abhängig vom verwendeten Editor), es sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen.
+#
+Leider existieren kaum deutsche Nachschlagewerke (Cheatsheets etc.).
 Es besteht in Asciidoc leider nicht die Möglichkeit der Konfiguration vorgefertigter Zeichensätze (Länge von Pfeilen, Lage von Pfeilen etc.)
-
-Zu den Nachteilen zählt außerdem die Tatsache, dass man durch versehentliche Returns oder Sonderzeichen die gesamte Formatierung verändern kann, wodurch das Dokument ungewollt anders aussieht.
-
+Zu den Nachteilen zählt außerdem die Tatsache, dass man durch versehentliche Returns oder Sonderzeichen die gesamte Formatierung verändern kann, wodurch das Dokument ungewollt anders aussieht. (Natüelich ist soetwas schnell behoben, jedoch passiert sowas bei der verwendung von gängigen Texteditoren nicht)
 Ein weiterer Nachteil ist, dass man beim Durchnummerieren (welches durch das Setzen von Punkten realisiert wird) direkt unter dem ersten Punkt einen weiteren Punkt setzen muss, damit die Liste logisch fortgeführt wird. Andernfalls (falls zwischen Punkt 1 und Punkt 2 ein Absatz ist) wird die Aufzählung von neuem (also wieder mit der 1 beginnend) gestartet und damit womöglich ungewollt falsch interpretiert.
-
 Der wohl größte Nachteil, der auch zur Folge hat, dass Asciidoc für den 0815-Schreibtischjob wohl keine Anwendung finden wird ist die Tatsache, dass man sich, anders als bei Word, erst die Syntax aneignen muss, um das volle Potential Asciidocs nutzen zu können.
 
 
@@ -314,3 +311,5 @@ Fazit
 Nach Aneignen der Syntax und ersten Rumspielereien war der Start in Asciidoc relativ einfach und die Verwendung Asciidocs mithilfe der zahlreichen im Internet vorhandenen Editoren kein Problem. 
 
 Für uns und viele Klassenkameraden waren Markup Sprachen etwas völlig Neues. Auch in meiner Familie kannte diese Art der Textverarbeitung niemand. Diese Tatsache ist meiner Meinung nach sehr traurig, da man mit Asciidoc, wie wir festgestellt haben, mindestens genauso gut Texte verfassen und bearbeiten kann wie mit jedem herkömmlichen Editor auch. Asciidoc hat, wie alles andere auch, seine Schwächen, aber auch Stärken, die es zu Nutzen gilt. Markup Sprachen, wie Asciidoc, sollten in meinen Augen bekannter werden, da sie es allein durch ihre Funktionalität definitiv verdient haben. - Christina Frei  
+
+Nachdem wir uns die ziemlich einfach zu lerndende Syntax angeeignet haben, fanden wir es sehr spannend diese auszuprobieren und einzusetzen. Meiner Meinung nach sollten Markupsprachen deutlich mehr an Bekanntheit erlangen, vorallem im Programmiererbereich findet Asciidoc durch die einfache Einbettung von Code sehr gut Verwendung. Auch für das Erstellen von Büchern ist Asciidoc durch die Funktion "doctype" eine gute Lösung. Alles in allem bin ich sehr angetan von dieser Markupsprachen und denke, ich werde mich in Zukunft noch mehr durch die Möglichkeiten von Asciidoc durcharbeiten und diese auch in Zukunft zum Erstellen von Dokumentationen verwenden. - Nico Ulsamer
