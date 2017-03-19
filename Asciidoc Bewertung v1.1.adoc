@@ -1,22 +1,20 @@
 Interpretation Asciidoc
 ======================
 Nico Ulsamer, Christina Frei
--v1.0
-
+v1.0
 :doctype: book
 :toc: right
 :toc-title: Inhaltsverzeichnis
 
 [preface]
 Vorwort
---------
+------
 Im Zuge unseres Deutschunterrichts haben wir uns der Analyse der Markup Sprache _Asciidoc_ gewidmet.
 Hierzu haben wir uns mit der Syntax, verschiedenen Asciidoc Editoren und der Konvertierung von adoc in andere Formate beschäftigt sowie einen direkten Vergleich zu dem gängigen Programm Microsoft Office Word 2010 gezogen.
 
 Zu Beginn möchten wir an __Asciidoc__ heranführen, indem wir einige Codebeispiele erläutern. 
 
 Zur Erarbeitung der Syntax von Asciidoc und zur Erstellung dieses Dokuments wurden die Editoren AsciidocFX und Atom, sowie GitHub verwendet.
-
 
 Codebeispiele
 ------------
@@ -34,7 +32,7 @@ Um unter den verschiedenen Überschriften Unterüberschriften zu setzen, muss ma
 Syntax:
 
 [source, asciidoc]
-----
+-----
 Erste Überschrift
 ---------------
 Unterüberschrift 1
@@ -43,7 +41,7 @@ Unterüberschrift 2
 ^^^^^^^^^^^^^^^^
 Unterüberschrift 3
 ++++++++++++++++
-----
+-----
 
 
 * Aufzählungen
@@ -60,14 +58,14 @@ Text
 Code hierfür: 
 
 [source, asciidoc]
-----
+-----
 . Erster Aufzählungspunkt
 . Zweiter Aufzählungspunkt 
 
 Text
 
 . Erster Aufzählungspunkt
-----
+-----
 
 * Doctype
 
@@ -78,11 +76,11 @@ Der Doctype manpage wird verwendet um UNIX Handbücher zu schreiben.
 
 Die Syntax, um den Doctype zu setzen ist Folgende:
 [source, asciidoc]
-----
+-----
 :doctype: book
 :doctype: article
 :doctype: manpage
-----
+-----
 
 Jeder der drei Doctypes hat seine Vor- und Nachteile, wir verwendeten vor allem aufgrund dem optischer Aspekte den Doctype book, da dieser von der Formatierung am ansprechendsten wirkte.
 
@@ -91,11 +89,11 @@ Jeder der drei Doctypes hat seine Vor- und Nachteile, wir verwendeten vor allem 
 Eine weitere interessante und vorallem wichtige Funktion von Asciidoc ist das Einbinden eines Table of Contents (zu Deutsch: Inhaltsverzeichnis). Dieses erkennt, sobald gesetzt, die einzelnen Überschriften und ermöglicht durch Verlinkungen in dem fertigen Dokument (PDF, Docbook) zu den entsprechenden Kapiteln zu springen. Außerdem bietet es dem Leser einen Überblick über die verschiedenen Kapitel. Unterüberschriften werden im Table of Content leicht eingerückt dargestellt. Der Table of Content kann entweder links oder rechts im Dokument platziert werden. 
 Die Syntax, um das Inhaltsverzeichnis mit benutzerdefiniertem Namen und individueller Ausrichtung einzufügen, ist Folgende:
 [source, asciidoc]
-----
+-----
 :toc:
 :toc: right
 :toc-title: Name des Table of Content
-----
+-----
 
 * Codesnippets mit Built-in Syntax Highlighting
 
@@ -104,7 +102,7 @@ In Asciidoc hat man (was vor allem zur Dokumentation von Programmen von Nutzen i
 So sieht folgender Code..
 
 [source, ]
-----
+-----
 public class HelloWorld 
 {
  
@@ -113,11 +111,11 @@ public class HelloWorld
              System.out.println("Hello World!");
              int beispielwert = 3;
        }
-----
+-----
 '...' mit Syntax-Highlighting so aus:
 
 [source, java]
-----
+-----
 public class HelloWorld 
 {
  
@@ -127,7 +125,7 @@ public class HelloWorld
              int beispielwert = 3;
        }
 
-----
+-----
 
 
 
@@ -314,7 +312,7 @@ Der wohl größte Nachteil, der auch zur Folge hat, dass Asciidoc für den 0815-
 
 
 Fazit
-----
+-----
 
 Nach Aneignen der Syntax und ersten Rumspielereien war der Start in Asciidoc relativ einfach und die Verwendung Asciidocs mithilfe der zahlreichen im Internet vorhandenen Editoren kein Problem. 
 
