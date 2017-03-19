@@ -94,7 +94,7 @@ In Asciidoc hat man (was vor allem zur Dokumentation von Programmen von nutzen i
 
 So sieht folgender Code..
 
-[source, asciidoc]
+[source, ]
 ----
 public class HelloWorld 
 {
