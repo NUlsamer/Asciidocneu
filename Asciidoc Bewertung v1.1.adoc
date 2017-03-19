@@ -60,7 +60,7 @@ Code hierfür:
 . Zweiter Aufzählungspunkt 
 ----
 
-*Doctype
+* Doctype
 
 In Asciidoc besteht die Möglichkeit, durch das setzen eines sogenannten "Doctypes", ein bereits voreingestelltes Format für das Dokument zu wählen. 
 Hier besteht die Möglichkeit, das vordefinierte Format "book", "article", oder "manpage" zu verwenden. Im book-format sind, wie bei einem Buch üblich, die Seitenzahlen jeweils auf der rechten, und daraufhin auf der linken Seite, es besteht ebenfalls die Möglichkeit ein Vorwort, ein Nachwort, ein Glossar und Fußnoten hinzuzufügen. 
@@ -77,7 +77,7 @@ Die Syntax, um den doctype zu setzen ist folgender:
 
 Jede der verschiedenen Dotypes hat seine Vor- und Nachteile, wir verwendeten vor allem aus dem optischem Aspekt den Doctype book, da dieser von der Formatierung am ansprechendsten aussah.
 
-*Table of Content
+* Table of Content
 
 Eine weitere interessante und vorallem wichtige Funktion von Asciidoc ist das einbinden eines Table of Contents (zu deutsch: Inhaltsverzeichnis). Dieser erkennt, sobald gesetzt, die einzelnen Überschriften und ermögicht durch Verlinkungen, in dem fertigen Dokument (in PDF, Docbook etc. formatiert) zu den entsprechenden Kapiteln zu springen, außerdem gibt er dem Leser einen Einblick in die verschiedenen Kapitel. Unterüberschriften werden im Table of Content leicht eingerückt dargestellt. Der Table of Content kann entweder links oder rechts von dem Dokument platziert werden. 
 Die Syntax, um das Inhaltsverzeichnis mit Benutzerdefiniertem Namen, und die Ausrichtung dessen zu setzen, ist folgende:
@@ -88,7 +88,35 @@ Die Syntax, um das Inhaltsverzeichnis mit Benutzerdefiniertem Namen, und die Aus
 :toc-title: Name des Table of Content
 ----
 
-*
+* Codesnippets mit Built-in Syntax Highlighting
+
+In Asciidoc hat man (was vor allem zur Dokumentation von Programmen von nutzen ist) die Möglichkeit, Code mit voreingestelltem Syntax-Highlighting einzufügen. Hierzu muss der Autor lediglich die verwendete Programmiersprache einfügen, um das zugehörige Syntax-Highlighting zu erhalten.
+
+So sieht folgender Code..
+
+public class HelloWorld 
+{
+ 
+       public static void main (String[] args)
+       {
+             System.out.println("Hello World!");
+             int beispielwert = 3;
+       }
+
+... mit Syntax-Highlighting so aus:
+
+[source, java]
+----
+public class HelloWorld 
+{
+ 
+       public static void main (String[] args)
+       {
+             System.out.println("Hello World!");
+             int beispielwert = 3;
+       }
+
+----
 
 
 
@@ -224,6 +252,8 @@ Vorteile
 ____
 Nur indem man das Unerreichbare anstrebt, gelingt das Erreichbare. Nur mit dem Unmöglichen als Ziel, gelingt das Mögliche.
 ____
+
+
 
 Die Vorteile Asciidocs liegen in vielen Bereichen. 
 So kann man, wie in https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele] gezeigt, nicht nur durch einfaches Einfügen von Programmcode und die Angabe der verwendeten Programmiersprache das zugehörige Syntax-Highlighting verwenden(was besonders für die Dokumentation von Programmen hilfreich ist), sondern ebenfalls Zitate, Bilder und Tabellen mit Leichtigkeit einfügen.
