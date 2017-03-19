@@ -33,18 +33,18 @@ Syntax:
 
 [source, asciidoc]
 -----
-Erste Überschrift
----------------
-Unterüberschrift 1
-~~~~~~~~~~~~~~~
-Unterüberschrift 2
-^^^^^^^^^^^^^^^^
-Unterüberschrift 3
-++++++++++++++++
+    Erste Überschrift
+    ----------------
+    Unterüberschrift 1
+    ~~~~~~~~~~~~~~~
+    Unterüberschrift 2
+    ^^^^^^^^^^^^^^^^
+    Unterüberschrift 3
+    ++++++++++++++++
 -----
 
 
-* Aufzählungen
+* *Aufzählungen*
 
 Indem man am Zeilenanfang einen Punkt setzt beginnt man eine Aufzählung. Diese Durchnummerierung wird solange durchgeführt, bis die nächste Zeile nicht mehr mit einem Punkt anfängt. So startet, wie in nachfolgendem Beispiel gut erkennbar, die erste Zeile mit Punkt am Anfang mit einer 1 und die Darauffolgende mit einer 2 und so weiter.
 
@@ -55,19 +55,21 @@ Text
 
 . Erster Aufzählungspunkt
 
+
+
 Code hierfür: 
 
 [source, asciidoc]
 -----
-. Erster Aufzählungspunkt
-. Zweiter Aufzählungspunkt 
+    . Erster Aufzählungspunkt
+    . Zweiter Aufzählungspunkt 
 
-Text
+    Text
 
-. Erster Aufzählungspunkt
+    . Erster Aufzählungspunkt
 -----
 
-* Doctype
+* *Doctype*
 
 In Asciidoc besteht die Möglichkeit, durch das Bestimmen eines sogenannten "Doctypes", ein bereits voreingestelltes Format für das Dokument zu wählen. 
 Hier besteht die Möglichkeit, das vordefinierte Format "book", "article", oder "manpage" zu verwenden. Im book-Format sind, wie bei einem Buch üblich, die Seitenzahlen jeweils auf der rechten, und daraufhin auf der linken Seite, es besteht zudem die Möglichkeit ein Vorwort, ein Nachwort, ein Glossar und Fußnoten hinzuzufügen. 
@@ -77,25 +79,25 @@ Der Doctype manpage wird verwendet um UNIX Handbücher zu schreiben.
 Die Syntax, um den Doctype zu setzen ist Folgende:
 [source, asciidoc]
 -----
-:doctype: book
-:doctype: article
-:doctype: manpage
+    :doctype: book
+    :doctype: article
+    :doctype: manpage
 -----
 
 Jeder der drei Doctypes hat seine Vor- und Nachteile, wir verwendeten vor allem aufgrund dem optischer Aspekte den Doctype book, da dieser von der Formatierung am ansprechendsten wirkte.
 
-* Table of Content
+* *Table of Content*
 
 Eine weitere interessante und vorallem wichtige Funktion von Asciidoc ist das Einbinden eines Table of Contents (zu Deutsch: Inhaltsverzeichnis). Dieses erkennt, sobald gesetzt, die einzelnen Überschriften und ermöglicht durch Verlinkungen in dem fertigen Dokument (PDF, Docbook) zu den entsprechenden Kapiteln zu springen. Außerdem bietet es dem Leser einen Überblick über die verschiedenen Kapitel. Unterüberschriften werden im Table of Content leicht eingerückt dargestellt. Der Table of Content kann entweder links oder rechts im Dokument platziert werden. 
 Die Syntax, um das Inhaltsverzeichnis mit benutzerdefiniertem Namen und individueller Ausrichtung einzufügen, ist Folgende:
 [source, asciidoc]
 -----
-:toc:
-:toc: right
-:toc-title: Name des Table of Content
+    :toc:
+    :toc: right
+    :toc-title: Name des Table of Content
 -----
 
-* Codesnippets mit Built-in Syntax Highlighting
+* *Codesnippets mit Built-in Syntax Highlighting*
 
 In Asciidoc hat man (was vor allem zur Dokumentation von Programmen von Nutzen ist) die Möglichkeit, Code mit voreingestelltem Syntax-Highlighting einzufügen. Hierzu muss der Autor lediglich die verwendete Programmiersprache deklarieren, um das zugehörige Syntax-Highlighting zu erhalten. 
 
@@ -103,31 +105,29 @@ So sieht folgender Code..
 
 [source, ]
 -----
-public class HelloWorld 
-{
+    public class HelloWorld 
+    {
  
-       public static void main (String[] args)
-       {
-             System.out.println("Hello World!");
-             int beispielwert = 3;
-       }
+        public static void main (String[] args)
+        {
+            System.out.println("Hello World!");
+            int beispielwert = 3;
+        }
 -----
 '...' mit Syntax-Highlighting so aus:
 
 [source, java]
 -----
-public class HelloWorld 
-{
+    public class HelloWorld 
+    {
  
        public static void main (String[] args)
        {
-             System.out.println("Hello World!");
-             int beispielwert = 3;
+            System.out.println("Hello World!");
+            int beispielwert = 3;
        }
 
 -----
-
-
 
 
 Vergleich zu Microsoft Office Word 2010
