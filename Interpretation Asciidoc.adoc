@@ -20,7 +20,7 @@ Codebeispiele
 ------------
 Mit den folgenden Syntaxkenntnissen kann man bereits die Basics in Sachen Formatierung umsetzen.
 
-* Überschriften
+* *Überschriften*
 
 Ein einfaches Gleichheitszeichen bewirkt, dass der darauffolgende Text als Hauptüberschrift angesehen und dementsprechend fett geschrieben wird sowie die Schriftgröße höher ausfällt. Je nachdem wie viele Gleichheitszeichen man benutzt, desto stärker wird dieser Effekt reduziert. 
 
