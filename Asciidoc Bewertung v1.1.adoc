@@ -103,7 +103,7 @@ public class HelloWorld
              int beispielwert = 3;
        }
 
-... mit Syntax-Highlighting so aus:
+'...' mit Syntax-Highlighting so aus:
 
 [source, java]
 ----
@@ -242,7 +242,7 @@ Dennoch gibt es eine sinnvolle Möglichkeit Asciidoc anstelle von Word in Untern
 
 Bewertung von Asciidoc
 ---------------------
-Zu Beginn möchten wir mit der Bewertung Asciidocs, genauer gesagt dessen Vor- und Nachteilen einleiten.
+Zum Ende möchten wir nun nochmal die einzelnen Kapitel in die Vor- bzw. Nachteile zusammenfassen.
 
 Vorteile
 ~~~~~~~~~
@@ -259,9 +259,10 @@ Die Vorteile Asciidocs liegen in vielen Bereichen.
 So kann man, wie in https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele] gezeigt, nicht nur durch einfaches Einfügen von Programmcode und die Angabe der verwendeten Programmiersprache das zugehörige Syntax-Highlighting verwenden(was besonders für die Dokumentation von Programmen hilfreich ist), sondern ebenfalls Zitate, Bilder und Tabellen mit Leichtigkeit einfügen.
 Dank der Livepreview einiger Programme kann man die verwendeten Bausteine sofort betrachten und gegebenenfalls abändern.
 
-Ein Weiterer, definitiv zu nennender Vorteil von Asciidoc ist die beinahe schon kinderleicht zu handhabende Formatierung, so muss man lediglich einige Codes und Kommandos beherrschen (wie in https://github.com/NUlsamer/Asciidocneu/blob/master/Asciidoc%20Bewertung%20v1.1.adoc#codebeispiele[Codebeispiele] gezeigt), die es ermöglichen den Text nach den Wünschen des Autors zu formatieren.
+Ein Weiterer, definitiv zu nennender Vorteil von Asciidoc ist die beinahe schon kinderleicht zu handhabende Formatierung, so muss man lediglich einige Codes und Kommandos beherrschen (wie in <<Codebeispiele>> gezeigt), die es ermöglichen den Text nach den Wünschen des Autors zu formatieren.
 
-Asciidoc bietet, zumindest bei der Benutzung von AsciidocFX die Möglichkeit, Dokumente als Ebook, Docbook, HTML oder PDF auszugeben.
+Asciidoc bietet, zumindest bei der Benutzung von AsciidocFX die Möglichkeit, Dokumente als Ebook, Docbook, HTML oder PDF auszugeben, weitere Möglichkeiten ein adoc File in andere Formate umzuwandeln wurden in <<Konvertierung von .adoc in andere Formate
+>> gezeigt.
 
 Des Weiteren lassen sich mit ein paar Zeichen schon komplexe mathematische Formeln darstellen, so lässt sich durch Verwendung von zwei Zirkumflexen eine Potenz darstellen. Mit der Nutzung zweier Tilde kann man eine Zahl mit einem Index versehen. 
 [source, Asciidoc]
@@ -272,7 +273,7 @@ Formatiert sieht das dann so aus:** x^2^ ; x~2~**
 
 Nachteile
 ~~~~~~~~
-Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur(was wiederrum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und, dass, sobald etwas über Copy & Paste eingefügt wird, es sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen.
+Zu nennende Nachteile sind unter anderem das Fehlen einer Autokorrektur(was wiederrum mit dem Editor zusammenhängt, jedoch fanden wir keinen, bei dem eine Autokorrektur vorhanden war) und, dass, sobald etwas über Copy & Paste eingefügt wird, es (auch abhänig vom verwendeten Editor) sofort als Java Code interpretiert wird und somit erst die zwei generierten Codezeilen gelöscht werden müssen.
 
 Leider gibt es kaum deutsche Nachschlagewerke (Cheatsheets etc.).
 
@@ -282,6 +283,10 @@ Zu den Nachteilen zählt außerdem die Tatsache, dass man durch versehentliche R
 
 Ein weiterer Nachteil ist die Tatsache, dass man bei der Verwendung der Durchnummerierung (welche durch das Setzen von Punkten realisiert wird) direkt danach einen weiteren Punkt setzen muss, damit die Liste logisch fortgeführt wird. Andernfalls (falls zwischen Punkt 1 und Punkt 2 ein Absatz ist) wird die Aufzählung von neuem (also wieder mit der 1 beginnend) gestartet.
 
+Der wohl größte Nachteil, was somit zur Folge hat, dass es wohl für den 0815-Schreibtischjob keine Anwendung finden wird, ist die Tatsache, dass man sich, anders als bei Word erst die Syntax aneignen muss, um das volle Potential Asciidocs verwenden zu können.
+
+
 Fazit
 ----
 
+Nach aneignen der Syntax und ersten rumspielereien, war der Start in Asciidoc relativ einfach, und die Verwendung Asciidocs mithilfe von den Zahlreichen im Internet vorhandenen Editoren kein Problem. 
