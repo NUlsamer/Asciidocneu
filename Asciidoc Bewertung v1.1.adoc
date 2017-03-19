@@ -1,7 +1,7 @@
 Interpretation Asciidoc
 ======================
--v1.0
 Nico Ulsamer, Christina Frei
+-v1.0
 
 :doctype: book
 :toc: right
